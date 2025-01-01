@@ -1,0 +1,180 @@
+@charset "UTF-8";
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family:Palatino, URW Palladio L, serif;;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .illustration {
+            flex: 1;
+      	    
+        }
+
+        .illustration img {
+            width: 700px;
+            height: 600px;
+	    
+        }
+
+        .login-section {
+            flex: 1;
+            width: 500px;
+            padding: 40px;
+            border: 1px solid white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px grey;
+            background-color: white;
+            
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .username{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: #5C42E4;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            font-family:American Typewriter, serif;
+        }
+        .password{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: #5C42E4;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            font-family:American Typewriter, serif;
+        }
+
+        .username::placeholder {
+            color: white;
+        }
+
+        .password::placeholder {
+            color: white;
+        }
+		.btn {
+		  height: 40px;
+		  width: 70px;
+		  position: relative;
+		  font-size: 17px;
+		  margin-left:120px;
+		  padding: 0 2.5em; /* Changed padding to set left and right padding only */
+		  display: inline-flex; /* Changed to inline-flex for better control */
+		  align-items: center; /* Vertically center the text */
+		  justify-content: center; /* Horizontally center the text */
+		  cursor: pointer;
+		  border-radius: 50px;
+		  transition: all 0.2s;
+		  border: none;
+		  font-family: inherit;
+		  font-weight: 500;
+		  color: white;
+		  background-color: #5C42E4;
+		  
+		  /* Ensure the button text is positioned above the ::after pseudo-element */
+		  z-index: 1;
+		}
+		
+		.btn:hover {
+		  transform: translateY(-3px);
+		  
+		}
+		
+		.btn:active {
+		  transform: translateY(-1px);
+		  
+		}
+		
+		.btn::after {
+		  content: "";
+		  display: inline-block;
+		  height: 100%;
+		  width: 100%;
+		  border-radius: 100px;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: -1;
+		  transition: all 0.4s;
+		  background-color:#5C42E4;
+		}
+		
+		.btn:hover::after {
+		  opacity: 0;
+		}
+        
+
+        .forgot-password {
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .illustration {
+                max-width: 100%;
+            }
+
+            .login-section {
+                max-width: 100%;
+            }
+        }
