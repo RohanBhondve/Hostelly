@@ -26,7 +26,7 @@
         <div class="content-area">
             <div class="header">
                 <h1 class="welcome">Housekeeping</h1>
-                <a href="homepage.jsp">
+                <a href="homepage2.jsp">
                 	<img class="logo" src="images/mainlogo1.jpg">
                 </a>
             </div>
